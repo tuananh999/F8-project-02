@@ -8,11 +8,12 @@ html {
 
 body {
     font-family: Poppins;
+    height: 5000px;
 }
 
 .content {
-    width: 81.25%;
-    max-width: 81.25%;
+    width: 1170px;
+    max-width: 1170px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -28,15 +29,21 @@ a {
     padding: 0 16px;
 }
 
-/* ==================Header================= */
-.container {
-    background-color: #FFFCF4;
-    height: 100vh;
-    padding-top: 36px;
+.btn:hover {
+    opacity: 0.9;
 }
+
+/* ==================Header================= */
 
 .header {
     background-color: #FFFCF4;
+    padding: 36px 0 8px;
+}
+
+.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 1;
 }
 
 .header .body {
@@ -85,7 +92,181 @@ a {
 
 .header .btn {
     background: #171100;
-    width: 144px;
-    line-height: 50px;
+    padding: 16px 28px;
     font-size: 1.6rem;
 }
+
+/* ========Hero========= */
+
+.hero {
+    padding-top: 72px;
+    padding-bottom: 65px;
+    background-color: #FFFCF4;
+}
+
+.hero .row {
+    display: flex;
+}
+
+/*========= Hero left ==========*/
+
+.hero .hero-left {
+    position: relative;
+    width: 49%;
+}
+
+.hero .hero-left .post-card {
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    width: 270px;
+    background: #FFF;
+    padding: 24px 0 24px 24px;
+    border-radius: 12px;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .post-card .info {
+    display: flex;
+    align-items: center;
+}
+
+.hero .post-card .info + .info {
+    margin-top: 22px ;
+}
+
+.hero .info .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #FFF9E8;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.hero .info .icon-2 {
+    background: #FCEFFF;
+}
+
+.hero .info .icon-3 {
+    background-color: #EBEAFF;
+}
+
+.hero .info .desc {
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.hero .desc .sub-title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+/*========= Hero right ==========*/
+
+.hero .hero-right {
+    width: 53%;
+    padding: 64px 0 0 130px;
+}
+
+.hero .hero-right .title {
+    color: #171100;
+    font-family: 'Sen', sans-serif;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17;
+    /* 117.241% */
+    letter-spacing: -1.16px;
+}
+
+
+.hero .hero-right .desc {
+    margin-top: 22px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    /* 166.667% */
+}
+
+.hero .hero-right .ctn-group {
+    display: flex;
+    margin: 38px 0 0 0;
+    align-items: center;
+}
+
+.hero .ctn-group .btn {
+    border-radius: 32px;
+    background: #FFB900;
+    padding: 18px 30px;
+    min-width: 180px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 30px;
+    /* 166.667% */
+}
+
+
+.hero .ctn-group .watch-video {
+    display: flex;
+    margin-left: 28px;
+    border: none;
+    background-color: transparent;
+    align-items: center;
+}
+.hero .watch-video .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.27);
+}
+
+.hero .watch-video span {
+    margin-left: 14px;
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    /* 166.667% */
+}
+
+.hero .hero-right .desc-2  {
+    margin-top: 48px;
+}
+
+.hero .hero-right .stats {
+    margin-left: -28px;
+}
+
+.hero .stats strong {
+    padding: 0 8px 0 28px;
+    color: #171100;
+    font-family: Sen;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px; /* 122.727% */
+}
+
+/*============ Popular=========== */
+
+.popular {
+    margin-top: 200px;
+}
+
+.popular .row {
+    display: flex;
+    justify-content: space-between;
+}
+
