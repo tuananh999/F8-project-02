@@ -718,14 +718,16 @@ p {
 
 .footer .row {
     display: flex;
-    align-items: center;
+    border-bottom: 1px solid #59554B;
+    padding-bottom: 38px;
 }
 
 .footer .row .column-1 {
-    width: 267px;
+    width: 35%;
 }
 
-.footer .row p {
+.footer .column-1 p {
+    max-width: 267px;
     margin-top: 18px;
     color: #BFBCB2;
     font-size: 1.4rem;
@@ -737,13 +739,16 @@ p {
 
 .footer .network-icon {
     margin-top: 18px;
+    display: flex;
+    gap: 18px
 }
 
-.network-icon .icon {
-    margin-right: 9px;
+
+.footer .column-2 {
+    width: 22%;
 }
 
-.footer .row .column-2 {
+.footer .column-2 h3 {
     color: #FFF;
     font-size: 1.6rem;
     font-weight: 600;
@@ -752,9 +757,39 @@ p {
 }
 
 .footer .column-2 .line {
-    margin-top: 12px;
-    width: 160px;
+    margin-top: 14px;
+    width: 130px;
     height: 1px;
     border-radius: 0.5px;
     background: #59554B;
+}
+
+.footer .column-2 ul {
+    margin-top: 28px;
+}
+
+.footer .column-2 ul li:nth-child(n+2) {
+    margin-top: 12px;
+}
+
+.column-2 li a {
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer .list strong {
+    font-weight: 600;
+    color: #fff;
+}
+
+.column-4 {
+    max-width: 21%;
+}
+
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 28px;
 }
